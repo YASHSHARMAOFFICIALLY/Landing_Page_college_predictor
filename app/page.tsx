@@ -1,13 +1,13 @@
 import {ModeToggle } from "@/components/mode-toggle"
-
+import { Hero } from "@/components/hero"
+import {Feature} from "@/components/feature"
 
 export default function Home(){
     return (
         <div className="min-h-screen font-display">
                 <ModeToggle/>
-                <p className="font-display">
-                     Agents that do the work.Approvals that keep you safe
-                </p>
+                <Hero/>
+                <Feature/>
                 
                
         </div>

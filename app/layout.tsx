@@ -37,11 +37,12 @@ export default function RootLayout({
         <ThemeProvider 
         attribute={"class"} 
         defaultTheme="system" 
-        enableSystem disableTransitionOnChange >
+        enableSystem disableTransitionOnChange 
+       >
           <Navbar/>
-          <main className="min-h-screen bg-background text-foreground">
-            {children}
-          </main>
+         <main className="min-h-screen bg-background text-foreground">
+  {children}
+</main>
         </ThemeProvider>
         </body>
     </html>
