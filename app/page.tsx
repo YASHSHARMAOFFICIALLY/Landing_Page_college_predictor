@@ -1,6 +1,7 @@
 import {ModeToggle } from "@/components/mode-toggle"
 import { Hero } from "@/components/hero"
 import {Feature} from "@/components/feature"
+import { FAQ } from "@/components/Faq"
 
 export default function Home(){
     return (
@@ -8,6 +9,7 @@ export default function Home(){
                 <ModeToggle/>
                 <Hero/>
                 <Feature/>
+                {/* <FAQ/> */}
                 
                
         </div>
