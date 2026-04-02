@@ -29,7 +29,7 @@ export const FAQ = () => {
   ]
 
   return (
-    <div className="w-full  bg-[lab(94.2%_0_0)] dark:bg-[lab(15%_0_0)]">
+    <div className="w-full  bg-[lab(94.2%_0_0)] dark:bg-black pb-20">
 
       <Container className="flex flex-col items-center text-center px-3 w-full">
 

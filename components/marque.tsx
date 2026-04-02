@@ -67,8 +67,13 @@ const testimonials = [
 ];
 
 export const Marquee = () => {
+    
   return (
-    <Container className="bg-neutral-200 dark:bg-[#0a0f1e]">
+    <div className="bg-neutral-200">
+       
+    
+
+    <div className="bg-neutral-200 dark:bg-[#0a0f1e]">
       <div className="w-full py-20">
         <div className="mx-auto w-full max-w-8xl px-4 lg:px-6">
           <div className="flex flex-col items-center mb-12 justify-center gap-y-4 text-center">
@@ -83,14 +88,13 @@ export const Marquee = () => {
 
         <div className="relative  flex h-full w-full flex-col items-center justify-center overflow-hidden  font-inter">
           <TestimonialMarquee
-          
-            testimonials={testimonials}
+            testimonials={testimonials as any }
             speed={45}
             pauseOnHover={true}
-            cardClassName="dark:bg-[#111827] "
           />
         </div>
       </div>
-    </Container>
+    </div>
+    </div>
   );
 };

@@ -55,7 +55,7 @@ interface CourseCardProps {
 }
 
 const CourseCard = ({ title, description, image, price, originalPrice, discount, href }:CourseCardProps) => (
-  <div className="overflow-hidden rounded-2xl border bg-white p-4 flex flex-col">
+  <div className="overflow-hidden rounded-2xl border bg-white p-4 flex flex-col ">
     <div className="relative overflow-hidden rounded-lg border mb-4 w-full">
       <img
         alt={title}
@@ -102,7 +102,7 @@ const CourseCard = ({ title, description, image, price, originalPrice, discount,
 
 export const Card = () => {
   return (
-    <Container className="w-full bg-[#001c52] pb-20">
+    <Container className="w-full bg-[#001c52] dark:bg-black pb-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 space-y-2 px-0 md:px-5">
           <h2 className="text-3xl text-center sm:text-start font-bold text-white md:text-4xl lg:text-5xl">

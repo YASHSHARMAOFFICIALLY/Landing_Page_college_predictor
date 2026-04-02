@@ -92,7 +92,7 @@ export const MobileNavbar = () =>{
                         duration:0.5,
                         delay:index * 0.5,
                     }}
-                    key = { items +  items.title}
+                   
                     >
                          <Link
                         key = {index} 
