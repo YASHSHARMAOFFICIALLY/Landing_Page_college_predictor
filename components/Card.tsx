@@ -54,9 +54,9 @@ interface CourseCardProps {
   href: string
 }
 
-const CourseCard = ({ title, description, image, price, originalPrice, discount, href }:CourseCardProps) => (
-  <div className="overflow-hidden rounded-2xl border bg-white p-4 flex flex-col ">
-    <div className="relative overflow-hidden rounded-lg border mb-4 w-full">
+ const CourseCard = ({ title, description, image, price, originalPrice, discount, href }: CourseCardProps) => (
+  <div className="overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 p-4 flex flex-col">
+    <div className="relative overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-700 mb-4 w-full">
       <img
         alt={title}
         width="100"
@@ -70,22 +70,22 @@ const CourseCard = ({ title, description, image, price, originalPrice, discount,
 
     <div className="flex flex-col gap-4 flex-1">
       <div>
-        <h3 className="text-xl font-semibold text-foreground min-h-15">{title}</h3>
-        <p className="line-clamp-2 text-base text-muted-foreground min-h-[52px]">{description}</p>
+        <h3 className="text-xl font-semibold text-neutral-900 dark:text-white min-h-15">{title}</h3>
+        <p className="line-clamp-2 text-base text-neutral-500 dark:text-neutral-400 min-h-[52px]">{description}</p>
       </div>
 
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 text-2xl font-bold tracking-tight">
           <p className="mb-0 text-primary">₹{price.toLocaleString()}</p>
-          <p className="text-neutral-400 line-through mb-0">₹{originalPrice.toLocaleString()}</p>
+          <p className="text-neutral-400 dark:text-neutral-500 line-through mb-0">₹{originalPrice.toLocaleString()}</p>
         </div>
-        <div className="text-green-600 text-sm font-semibold bg-green-100 px-3 py-1 rounded-full w-fit">
+        <div className="text-green-600 dark:text-green-400 text-sm font-semibold bg-green-100 dark:bg-green-900/40 px-3 py-1 rounded-full w-fit">
           {discount}% off
         </div>
       </div>
 
       <div className="flex flex-col gap-2 mt-auto">
-        <select className="flex items-center justify-between gap-2 rounded-md border px-3 py-2 text-sm h-9 bg-white w-full">
+        <select className="rounded-md border border-neutral-200 dark:border-neutral-700 px-3 py-2 text-sm h-9 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-white w-full">
           <option value="INR">INR</option>
           <option value="USD">USD</option>
         </select>

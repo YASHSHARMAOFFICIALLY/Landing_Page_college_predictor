@@ -4,6 +4,7 @@ import {Feature} from "@/components/feature"
 import { FAQ } from "@/components/Faq"
 import { Photo } from "@/components/photo"
 import { Marquee } from "@/components/marque"
+import { ContactSection } from "@/components/contact"
 import { Card } from "@/components/Card"
 
 export default function Home(){
@@ -16,6 +17,7 @@ export default function Home(){
                 <Card/>
                 <FAQ/>
                 <Photo/>
+                <ContactSection/>
                 
                
         </div>
