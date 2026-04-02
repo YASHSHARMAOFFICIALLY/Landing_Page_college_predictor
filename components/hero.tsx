@@ -32,11 +32,11 @@ export const Hero = () => {
             <div className="flex items-center gap-4 sm:justify-start justify-center">
               
               <Button className="bg-white text-neutral-900 dark:text-neutral-800 rounded-xl px-6 py-2 h-9 border border-border">
-                Signup
+             Learn More
               </Button>
 
-              <Button className="bg-blue-600 dark:bg-blue-500 rounded-xl px-6 py-2 h-9">
-                Login
+              <Button className="bg-[#001c52] dark:bg-blue-500/50  rounded-xl px-6 py-2 h-9">
+               Explore Courses
               </Button>
 
             </div>

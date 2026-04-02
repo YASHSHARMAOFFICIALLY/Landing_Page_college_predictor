@@ -11,6 +11,10 @@ import { useState } from "react";
 
 
 const navlink = [
+    {
+        title: <span className="font-bold">100<span className="text-red-600 font-bold tracking-tight ">x</span>Devs</span>,
+        href:"/"
+    },
         {
             title:'Home',
             href:'/features'
@@ -29,7 +33,9 @@ const navlink = [
 export const Navbar = () =>{
     return(
         <div className="w-full border-b border-neutral-200 dark:border-neutral-600">
-            <DesktopNavbar></DesktopNavbar>
+            <DesktopNavbar>
+
+            </DesktopNavbar>
             <MobileNavbar/>
             
         </div>
@@ -39,8 +45,7 @@ export const Navbar = () =>{
 export const MobileNavbar = () =>{
     const[open,setopen] = useState(false)
     return(
-        <div className="flex md:hidden px-4 py-2 justify-between m">
-            
+        <div className="flex md:hidden px-4 py-2 justify-between m"> 
             <button onClick = {()=>setopen(!open)}>
                 <IconLayoutSidebar className = "size-4" />
             </button>     
@@ -87,7 +92,7 @@ export const MobileNavbar = () =>{
                         duration:0.5,
                         delay:index * 0.5,
                     }}
-                    key = {index + items.title}
+                    key = { items +  items.title}
                     >
                          <Link
                         key = {index} 
@@ -118,7 +123,7 @@ export const MobileNavbar = () =>{
 
 export const DesktopNavbar = () => {
     return(
-        <Container className="py-1  items-center justify-between hidden lg:flex">
+        <Container className="py-1  items-center justify-between hidden md:flex">
         
                 <div className="flex items-center gap-4">
                     {navlink.map((item,index)=>{
@@ -131,11 +136,11 @@ export const DesktopNavbar = () => {
                     })}
                 </div>
                 <div className="flex items-center gap-4">
-                      <Button className="bg-white-600  text-neutral-600 dark:text-neutral-200 cursor-pointer rounded-xl px-6 py-2 h-9 border border-neutral-200 dark:border-neutral-50 " >
+                      <Button className="bg-white-600  text-neutral-600 dark:text-white font-bold cursor-pointer rounded-xl px-6 py-2 h-9 border border-neutral-200 dark:border-neutral-50 " >
                       Signup
                     </Button>
                     
-                    <Button className="bg-blue-600  dark:bg-blue-500 cursor-pointer rounded-xl px-6 py-2 h-9" >
+                    <Button className="bg-[#001c52] dark:text-white  font-bold dark:bg-bg-[#001c52] cursor-pointer rounded-xl px-6 py-2 h-9" >
                       Login
                     </Button>
 
