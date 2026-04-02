@@ -29,7 +29,7 @@ export const ContactSection = () => {
         <div className="relative flex-1 overflow-hidden min-h-[400px] lg:h-auto pointer-events-auto">
           <div className="absolute inset-0 flex items-end justify-center sm:-bottom-96 md:-bottom-40 lg:justify-start lg:-left-50 lg:-bottom-70">
             <img
-              src="/home-globe.svg"
+              src="https://harkirat.classx.co.in/home-globe.svg"
               alt="Global network"
               className="h-auto w-full max-w-[600px] md:max-w-[820px] lg:max-w-full object-contain lg:object-cover"
             />
