@@ -42,7 +42,7 @@ export default function RootLayout({
        >
           <Navbar/>
          <main className="min-h-screen bg-background text-foreground">
-          <Analyatics/>
+          <Analytics/>
   {children}
 </main>
         </ThemeProvider>
