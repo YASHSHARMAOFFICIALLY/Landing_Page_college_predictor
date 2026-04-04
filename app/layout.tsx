@@ -4,6 +4,7 @@ import {Manrope ,Inter} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Navbar } from "@/components/navbar";
+import { Analytics } from "@vercel/analytics/next"
 
 
 const manrope = Manrope({
@@ -41,6 +42,7 @@ export default function RootLayout({
        >
           <Navbar/>
          <main className="min-h-screen bg-background text-foreground">
+          <Analyatics/>
   {children}
 </main>
         </ThemeProvider>
